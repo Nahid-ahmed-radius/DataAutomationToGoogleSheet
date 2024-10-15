@@ -1,0 +1,40 @@
+Instructions for Fetching Facebook Ads Data to Google Sheets
+Create a Facebook App:
+
+Go to the Facebook Developer Portal and create a new app.
+Navigate to the "Add a Product" section and select "Facebook Login" to enable it.
+Get Your Access Token:
+
+Under the "Graph API" section, generate a long-lived access token by following the necessary steps.
+Ensure that your token has the required permissions to access the ads insights.
+Find Your Ad Account ID:
+
+You can find your Ad Account ID in the Facebook Ads Manager. It will be listed as act_<AdAccountID>.
+Setup Your Google Sheet:
+
+Create a new Google Sheet and add a tab named FacebookAdsData where you want the data to be displayed.
+Open Google Apps Script:
+
+In your Google Sheet, click on Extensions > Apps Script.
+Add the Script:
+
+Paste the provided Google Apps Script code into the editor.
+Replace Placeholders:
+
+Ensure to replace the following placeholders in the code with your actual values:
+Facebook Access Token: Your long-lived Facebook access token.
+Facebook Ad Account ID: Your Facebook Ad Account ID.
+Google Sheet ID: The ID of your Google Sheet (found in the URL of your Google Sheet).
+Sheet Tab Name: The name of the tab where you want the data to be inserted (default is FacebookAdsData).
+Authorize the Script:
+
+Save the script and run the function.
+Follow the on-screen instructions to authorize the script to access your Google Sheet.
+Run the Script:
+
+After authorization, run the function again to fetch data from Facebook Ads and populate your Google Sheet.
+Check Your Google Sheet:
+
+Open your Google Sheet and navigate to the FacebookAdsData tab. You should see the fetched insights displayed there.
+Conclusion
+With this setup, you can automate the process of fetching and updating Facebook Ads data in your Google Sheets, facilitating easier analysis and reporting of your advertising efforts.
