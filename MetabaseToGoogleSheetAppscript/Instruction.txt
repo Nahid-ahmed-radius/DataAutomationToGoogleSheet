@@ -1,0 +1,29 @@
+Instructions for Fetching Data from Metabase to Google Sheets
+1. Setup Your Google Sheet
+Create a New Google Sheet: Go to Google Sheets and create a new spreadsheet.
+Create a Tab: Add a new tab (sheet) within your Google Sheet where you want the Metabase data to be displayed. Name this tab appropriately (e.g., MetabaseData).
+2. Open Google Apps Script
+Access Google Apps Script: In your Google Sheet, click on Extensions > Apps Script. This will open a new tab where you can write your script.
+3. Add the Script
+Paste the Code: In the Google Apps Script editor, delete any existing code and paste the provided Google Apps Script code for fetching data from Metabase.
+4. Replace Placeholders
+Customize the Script: Ensure that you replace the following placeholders in the code with your actual values:
+Metabase URL: The URL of your Metabase instance.
+Metabase Query ID: The specific Metabase query ID you want to use.
+Metabase Username: Your Metabase username.
+Metabase Password: Your Metabase password.
+Google Sheet ID: The ID of your Google Sheet (found in the URL of your Google Sheet).
+Sheet Tab Name: The name of the tab where you want the data to be inserted.
+5. Authorize the Script
+Save the Script: Click on the disk icon to save your script.
+Run the Function: Select the function you just created and click the run button (▶️).
+Authorize Access: You may be prompted to authorize the script to access your Google Sheet. Follow the on-screen instructions to do so.
+6. Run the Script
+Execute the Script: After authorization, run the function again to fetch data from Metabase and populate your Google Sheet.
+7. Check Your Google Sheet
+Verify Data: Open your Google Sheet and navigate to the specified tab. You should see the fetched data from Metabase displayed there.
+Troubleshooting
+Error Logging: If you encounter errors, check the logs by going to View > Logs in the Apps Script editor for troubleshooting insights.
+No Data Returned: If the script runs without errors but no data appears in your Google Sheet, verify that the Metabase query ID is correct and that the query is returning results.
+Conclusion
+By following these steps, you will have successfully set up a Google Apps Script that fetches data from Metabase and populates it in your Google Sheet. This allows for efficient reporting and analysis using data from your Metabase instance.
